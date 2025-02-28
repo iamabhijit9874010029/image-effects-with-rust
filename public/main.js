@@ -6,7 +6,7 @@ async function init() {
         console.log(rustApp);
     }
     catch (err) {
-        console.log(err);
+        console.error(err);
         return;
     }
 
