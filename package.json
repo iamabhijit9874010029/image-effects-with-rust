@@ -9,7 +9,9 @@
     "webpack": "^5.98.0",
     "webpack-dev-server": "^5.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@wasm-tool/wasm-pack-plugin": "^1.7.0"
+  },
   "scripts": {
     "serve": "webpack serve --mode=development",
     "build": "webpack --mode=production"
