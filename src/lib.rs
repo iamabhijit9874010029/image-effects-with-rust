@@ -26,6 +26,9 @@ pub fn grayscale(encoded_file: &str){
     let base64_to_vector = decode(encoded_file).unwrap();
     log(&"Image decoded".into());
 
-    let image = load_from_memory(&base64_to_vector).unwrap();
+    let mut image = load_from_memory(&base64_to_vector).unwrap();
     log(&"Image loaded".into());
+
+    image = image.grayscale();
+    log(&"Grayscale effect applied".into());
 }
