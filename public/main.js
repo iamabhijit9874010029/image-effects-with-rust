@@ -19,7 +19,8 @@ async function init() {
         // console.log(input.files[0]);
         // console.log(base64);
 
-        rustApp.grayscale(base64);
+        let img_data_url = rustApp.grayscale(base64);
+        document.getElementById('new-img').setAttribute("src", img_data_url);
 
     }
 
